@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-26T22:30:00Z",
+  "title": "Design System: Maxim Derkachev",
+  "extensions": {
+    "colorMeta": {
+      "phosphor": {
+        "role": "primary",
+        "displayName": "Soft Green Phosphor",
+        "canonical": "#86d39b",
+        "cssVar": "--phos",
+        "tonalRamp": [
+          "#001500",
+          "#003102",
+          "#004f1f",
+          "#1e6f3d",
+          "#44905c",
+          "#66b27c",
+          "#8cd9a1",
+          "#b6ffca"
+        ]
+      },
+      "phosphor-hot": {
+        "role": "secondary",
+        "displayName": "Hot Phosphor",
+        "canonical": "#cdf0d6",
+        "cssVar": "--hot",
+        "tonalRamp": [
+          "#001102",
+          "#0d2b18",
+          "#2a4833",
+          "#476650",
+          "#66866f",
+          "#87a890",
+          "#acceb5",
+          "#d6f9df"
+        ]
+      },
+      "phosphor-dim": {
+        "role": "neutral",
+        "displayName": "Dim Phosphor",
+        "canonical": "color-mix(in oklab, #86d39b 72%, #0b100c)",
+        "cssVar": "--dim",
+        "tonalRamp": [
+          "#233427",
+          "#324c38",
+          "#507d5c",
+          "#5d926b",
+          "#60966e",
+          "#7fc893",
+          "#86d39b",
+          "#cdf0d6"
+        ]
+      },
+      "phosphor-faint": {
+        "role": "neutral",
+        "displayName": "Faint Phosphor",
+        "canonical": "color-mix(in oklab, #86d39b 60%, #0b100c)",
+        "cssVar": "--faint",
+        "tonalRamp": [
+          "#233427",
+          "#324c38",
+          "#507d5c",
+          "#5d926b",
+          "#60966e",
+          "#7fc893",
+          "#86d39b",
+          "#cdf0d6"
+        ]
+      },
+      "scan-rule": {
+        "role": "neutral",
+        "displayName": "Scan Rule",
+        "canonical": "color-mix(in oklab, #86d39b 22%, #0b100c)",
+        "cssVar": "--rule",
+        "tonalRamp": [
+          "#233427",
+          "#324c38",
+          "#507d5c",
+          "#5d926b",
+          "#60966e",
+          "#7fc893",
+          "#86d39b",
+          "#cdf0d6"
+        ]
+      },
+      "glass": {
+        "role": "neutral",
+        "displayName": "Green-Black Glass",
+        "canonical": "#0b100c",
+        "cssVar": "--glass",
+        "tonalRamp": [
+          "#080d09",
+          "#202621",
+          "#3c423d",
+          "#59605a",
+          "#797f7a",
+          "#9aa19b",
+          "#bfc6c0",
+          "#e9f1eb"
+        ]
+      },
+      "glass-lit": {
+        "role": "neutral",
+        "displayName": "Lit Glass",
+        "canonical": "#111913",
+        "cssVar": "--glass-2",
+        "tonalRamp": [
+          "#060d08",
+          "#1e2620",
+          "#39423b",
+          "#576059",
+          "#768078",
+          "#97a299",
+          "#bcc7bf",
+          "#e7f2e9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the first viewport, uppercase, one line. The contact email reuses this voice at clamp(2.1rem, 7.2vw, 5.5rem)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings written as shell commands with a faint $ prompt."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The one-fact number beside a history row."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project names written as directories."
+      },
+      "command": {
+        "displayName": "Command",
+        "purpose": "Buttons and the main link list (2rem in the wide right column)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Status line and key bar."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Intro sentence and contact lead, max 44-46ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose, max 68ch; 1rem under 640px. Ligatures off."
+      },
+      "body-strong": {
+        "displayName": "Body Strong",
+        "purpose": "Role titles in history rows."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Meta lines, project tag lines, stack line, in dim phosphor."
+      }
+    },
+    "shadows": [
+      {
+        "name": "phosphor-bloom",
+        "value": "0 0 0.12em color-mix(in oklab, var(--phos) 35%, transparent)",
+        "purpose": "text-shadow on the hottest live display text: the name, the current-section heading, the contact email (30%)."
+      },
+      {
+        "name": "tube-overlay",
+        "value": "repeating-linear-gradient(to bottom, transparent 0 2px, rgb(0 0 0 / 0.07) 2px 3px), radial-gradient(140% 110% at 50% 50%, transparent 62%, rgb(0 0 0 / 0.42) 100%)",
+        "purpose": "Single fixed pointer-events:none layer over the whole page: scanlines and vignette. Not a box-shadow; the system has none."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-power",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Power-on and rise-in entrances."
+      },
+      {
+        "name": "power-on",
+        "value": "700ms",
+        "purpose": "Tube expands from a bright line to the full hero, once per load; skipped under reduced motion."
+      },
+      {
+        "name": "type-in",
+        "value": "520ms steps(15, end) 420ms",
+        "purpose": "The name types in during power-on."
+      },
+      {
+        "name": "rise-stagger",
+        "value": "500ms, +120ms per line",
+        "purpose": "Hero lines rise in after the name."
+      },
+      {
+        "name": "blink",
+        "value": "1.06s steps(1) infinite",
+        "purpose": "Block cursor; the availability square uses 1.6s. Off under reduced motion."
+      },
+      {
+        "name": "state",
+        "value": "120ms",
+        "purpose": "Background/color on buttons, keys, row pointer; history row color uses 160ms."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "480px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "860px"
+      },
+      {
+        "name": "lg",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Key Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Keyboard-key button with a digit cap; phosphor fill. One per view, for the main action.",
+      "html": "<a class=\"ds-btn ds-btn--primary\" href=\"#\"><kbd>5</kbd><span>Write to me</span></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:stretch;border:1px solid var(--phos,#86d39b);color:var(--phos,#86d39b);text-decoration:none;font:400 1.6rem/1 var(--display,'VT323',monospace);transition:background-color 120ms,color 120ms}.ds-btn kbd{font:inherit;display:grid;place-items:center;padding:0.35rem 0.6rem;border-right:1px solid var(--phos,#86d39b)}.ds-btn>span{padding:0.45rem 0.9rem 0.35rem}.ds-btn--primary{background:var(--phos,#86d39b);color:var(--glass,#0b100c)}.ds-btn--primary kbd{border-right-color:var(--glass,#0b100c)}.ds-btn:hover,.ds-btn:focus-visible{background:var(--hot,#cdf0d6);color:var(--glass,#0b100c);border-color:var(--hot,#cdf0d6)}.ds-btn:hover kbd,.ds-btn:focus-visible kbd{border-right-color:var(--glass,#0b100c)}.ds-btn:focus-visible{outline:2px solid var(--hot,#cdf0d6);outline-offset:3px}.ds-btn:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Secondary Key Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined keyboard-key button on glass for secondary actions.",
+      "html": "<a class=\"ds-btn2\" href=\"#\"><kbd>6</kbd><span>Download CV (PDF)</span></a>",
+      "css": ".ds-btn2{display:inline-flex;align-items:stretch;border:1px solid var(--phos,#86d39b);color:var(--phos,#86d39b);background:var(--glass,#0b100c);text-decoration:none;font:400 1.6rem/1 var(--display,'VT323',monospace);transition:background-color 120ms,color 120ms}.ds-btn2 kbd{font:inherit;display:grid;place-items:center;padding:0.35rem 0.6rem;border-right:1px solid var(--phos,#86d39b)}.ds-btn2>span{padding:0.45rem 0.9rem 0.35rem}.ds-btn2:hover,.ds-btn2:focus-visible{background:var(--hot,#cdf0d6);color:var(--glass,#0b100c);border-color:var(--hot,#cdf0d6)}.ds-btn2:hover kbd,.ds-btn2:focus-visible kbd{border-right-color:var(--glass,#0b100c)}.ds-btn2:focus-visible{outline:2px solid var(--hot,#cdf0d6);outline-offset:3px}.ds-btn2:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Status Line",
+      "kind": "nav",
+      "refersTo": "status-line",
+      "description": "Inverse-video sticky top bar: host, uptime, local time, availability with a blinking square, EN/ES toggle.",
+      "html": "<header class=\"ds-status\"><span>mderk@girona</span><span>up since 1998</span><span>Girona 22:30</span><span class=\"ds-status__open\">open to contracts</span><button class=\"ds-status__lang\" type=\"button\"><span class=\"ds-on\">EN</span>/<span>ES</span></button></header>",
+      "css": ".ds-status{display:flex;align-items:center;gap:0 1.75rem;min-height:2rem;padding:0 1.5rem;background:var(--phos,#86d39b);color:var(--glass,#0b100c);font:400 1.35rem/1 var(--display,'VT323',monospace);white-space:nowrap;overflow:hidden}.ds-status__open{margin-left:auto}.ds-status__open::before{content:\"\";display:inline-block;width:0.55em;height:0.55em;margin-right:0.5em;background:currentColor;animation:ds-blink 1.6s steps(1) infinite}.ds-status__lang{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0.25rem 0.4rem}.ds-status__lang .ds-on{background:var(--glass,#0b100c);color:var(--phos,#86d39b);padding:0 0.2em}.ds-status__lang:hover{text-decoration:underline}.ds-status__lang:focus-visible{outline:2px solid var(--glass,#0b100c);outline-offset:-3px}@keyframes ds-blink{50%{opacity:0}}"
+    },
+    {
+      "name": "Key Bar",
+      "kind": "nav",
+      "refersTo": "key-bar-key",
+      "description": "Midnight-Commander-style numbered section bar; digits work from the keyboard; the section in view is lit hot.",
+      "html": "<nav class=\"ds-keys\"><a href=\"#\"><kbd>1</kbd><span>whoami</span></a><a href=\"#\" aria-current=\"true\"><kbd>2</kbd><span>now</span></a><a href=\"#\"><kbd>3</kbd><span>history</span></a><a href=\"#\"><kbd>4</kbd><span>projects</span></a></nav>",
+      "css": ".ds-keys{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 0.35rem;padding:0.4rem 1.5rem;background:var(--glass,#0b100c);border-top:1px solid var(--rule,#233427);font:400 1.35rem/1 var(--display,'VT323',monospace)}.ds-keys a{display:flex;align-items:stretch;min-width:0;min-height:2.2rem;color:var(--glass,#0b100c);text-decoration:none}.ds-keys kbd{font:inherit;display:grid;place-items:center;padding:0 0.35rem 0 0.1rem;color:var(--phos,#86d39b);background:var(--glass,#0b100c)}.ds-keys a>span{flex:1;min-width:0;display:flex;align-items:center;padding:0.1rem 0.45rem 0;background:var(--dim,#60966e);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;transition:background-color 120ms}.ds-keys a:hover>span{background:var(--phos,#86d39b)}.ds-keys [aria-current=\"true\"]>span{background:var(--hot,#cdf0d6)}.ds-keys [aria-current=\"true\"] kbd{color:var(--hot,#cdf0d6)}.ds-keys a:focus-visible{outline:2px solid var(--hot,#cdf0d6);outline-offset:1px}"
+    },
+    {
+      "name": "Prompt Link List",
+      "kind": "custom",
+      "refersTo": "link-prompt",
+      "description": "Links as prompt lines with a faint '> ' prefix; hover inverts the whole line.",
+      "html": "<ul class=\"ds-links\"><li><a href=\"#\">github.com/mderk</a></li><li><a href=\"#\">linkedin.com/in/mderk</a></li><li><a href=\"#\">impossible.rocks</a></li></ul>",
+      "css": ".ds-links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0.4rem;font:400 1.6rem/1.2 var(--display,'VT323',monospace);color:var(--phos,#86d39b)}.ds-links a{color:inherit;text-decoration:none}.ds-links a::before{content:\"> \";color:var(--faint,#507d5c)}.ds-links a:hover,.ds-links a:focus-visible{background:var(--phos,#86d39b);color:var(--glass,#0b100c)}.ds-links a:hover::before,.ds-links a:focus-visible::before{color:inherit}.ds-links a:focus-visible{outline:2px solid var(--hot,#cdf0d6);outline-offset:3px}"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Shell-command section heading: faint $ prompt, hot VT323 words, dashed rule above, dim meta line below.",
+      "html": "<div class=\"ds-sect\"><h2><span class=\"ds-ps\">$</span> history</h2><p class=\"ds-meta\">Where I've worked, newest first.</p></div>",
+      "css": ".ds-sect h2{margin:0 0 0.35rem;padding-top:1.25rem;border-top:1px dashed var(--rule,#233427);font:400 clamp(2.6rem,5vw,3.6rem)/1 var(--display,'VT323',monospace);color:var(--hot,#cdf0d6)}.ds-ps{color:var(--faint,#507d5c);margin-right:0.15em}.ds-meta{margin:0;color:var(--dim,#60966e);font:400 0.95rem/1.65 var(--text,'Azeret Mono',monospace)}"
+    },
+    {
+      "name": "History Row",
+      "kind": "card",
+      "refersTo": "",
+      "description": "Date / role and story / figure row, dimmed by age; hover restores full phosphor and shows a hot > pointer.",
+      "html": "<ol class=\"ds-log\"><li class=\"ds-row\" style=\"--age:0\"><p class=\"ds-when\">2025-26</p><div><h3>Backend tech lead <span class=\"ds-at\">· Praxium AI</span></h3><p>Built the DICOM pipeline that gets a study to the doctor in minutes.</p></div><p class=\"ds-fact ds-hot\">hours -&gt; min</p></li><li class=\"ds-row\" style=\"--age:5\"><p class=\"ds-when\">2008-10</p><div><h3>CTO and lead developer <span class=\"ds-at\">· Mixero</span></h3><p>A client for reading and posting to Twitter and Facebook in one place.</p></div><p class=\"ds-fact\"></p></li></ol>",
+      "css": ".ds-log{list-style:none;margin:0;padding:0 0 0 1.5rem;font:400 1.0625rem/1.65 var(--text,'Azeret Mono',monospace)}.ds-row{--lvl:calc(100% - var(--age) * 5%);color:color-mix(in oklab,var(--phos,#86d39b) var(--lvl),var(--glass,#0b100c));display:grid;grid-template-columns:6rem minmax(0,1fr) auto;gap:0 2rem;padding:1.35rem 0 1.25rem;border-top:1px dashed var(--rule,#233427);position:relative;transition:color 160ms}.ds-row:first-child{border-top:0}.ds-row::before{content:\">\";position:absolute;left:-1.4rem;top:1.25rem;font:400 1.9rem/1 var(--display,'VT323',monospace);color:var(--hot,#cdf0d6);opacity:0;transition:opacity 120ms}.ds-row:hover,.ds-row:focus-within{color:var(--phos,#86d39b)}.ds-row:hover::before,.ds-row:focus-within::before{opacity:1}.ds-row p{margin:0}.ds-when{font:400 2rem/1 var(--display,'VT323',monospace);padding-top:0.15rem}.ds-row h3{margin:0 0 0.45rem;font-size:1.0625rem;font-weight:700;line-height:1.4}.ds-at{font-weight:400}.ds-fact{text-align:right;font:400 clamp(2.4rem,4vw,3.6rem)/0.95 var(--display,'VT323',monospace);white-space:nowrap}.ds-hot{color:var(--hot,#cdf0d6)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Green Terminal",
+    "overview": "The whole site is one session on an old phosphor monitor, but the monitor is set for reading, not for show. A single soft, desaturated green glows on green-black glass; brightness is the only other variable. Headings, numbers, keys and commands speak in a chunky CRT bitmap face; every sentence a person has to read is set in a clean, generous monospace at full contrast. The effect should be calm and legible, closer to a well-lit VT terminal at night than to a hacker movie.\n\nThe screen is framed by two pieces of terminal furniture: an inverse-video status line pinned to the top and a Midnight-Commander-style numbered key bar fixed to the bottom, whose digits actually work from the keyboard. Between them, content is one long left-aligned scroll of shell sections (`$ whoami`, `$ now`, `$ history`), separated by faint dashed rules. Time is expressed as phosphor persistence: what is current glows hottest, what is old fades toward the glass.\n\nMaterial is a thin CRT layer over everything: faint 3px scanlines and a soft tube vignette, a barely lit center on the glass, and a small bloom around the brightest text. There is no noise, no glitch, no neon, no second hue.",
+    "keyCharacteristics": [
+      "One hue (soft green phosphor), five brightness steps, on green-black glass.",
+      "VT323 for display, labels and figures; Azeret Mono for all reading text.",
+      "Inverse video (light bar, dark text) as the emphasis and hover language.",
+      "Square cells, 1px solid borders on controls, 1px dashed rules between sections.",
+      "Terminal furniture: sticky status line on top, fixed numbered key bar at the bottom.",
+      "One authored motion moment: CRT power-on; otherwise only a blinking block cursor."
+    ],
+    "rules": [
+      {
+        "name": "The One Phosphor Rule",
+        "body": "Every foreground color is the phosphor mixed toward the glass in OKLab. No second hue, not for links, not for status, not for errors. New states are new brightness levels, never new colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The Persistence Rule",
+        "body": "Recency is brightness. History rows compute their color as `color-mix(in oklab, phosphor calc(100% - age * 5%), glass)`; the current rows' figures are hot, and hovering or focusing a row restores it to full phosphor. Anything newer or more important is brighter; anything older fades.",
+        "section": "colors"
+      },
+      {
+        "name": "The Faint-Is-Large Rule",
+        "body": "Faint phosphor (4.0:1) appears only on display-size glyphs and decorative prefixes. Anything a visitor has to read sits at dim (5.5:1) or brighter.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "VT323 never sets a paragraph; Azeret Mono never sets a heading, key or figure. If it is a sentence, it is Azeret Mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight-of-the-Fact Rule",
+        "body": "Type size follows how much a fact matters, not where it sits. The strongest number in a history row is set at figure size in the margin; rows without a fact leave the column empty rather than inventing one.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shell Grammar Rule",
+        "body": "Headings are commands (`$ whoami`, `$ ls ~/projects`, `$ mail`), projects are directories with a trailing slash, link lists are prefixed with `> `. The prompt characters are faint; the words are hot.",
+        "section": "typography"
+      },
+      {
+        "name": "The Glass Is Flat Rule",
+        "body": "Nothing floats. Elements sit on the glass; hierarchy comes from brightness, size and inverse video. Bloom is reserved for the few hottest, currently-live lines.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** express every new state as a brightness step of the one phosphor (mix toward glass in OKLab), never as a new hue.",
+      "**Do** use inverse video (phosphor or hot fill, glass text) for hover and emphasis on commands, links and keys.",
+      "**Do** set every sentence in Azeret Mono at dim (5.5:1) or brighter, capped at 68ch.",
+      "**Do** write headings as shell commands with a faint `$`, projects as directories with a trailing `/`, and link lists with a faint `> `.",
+      "**Do** give new top-level sections a working digit in the key bar and light it while the section is on screen.",
+      "**Do** keep corners square, controls on 1px solid phosphor, and dividers on 1px dashed Scan Rule.",
+      "**Do** make older or secondary content dimmer and current content hotter."
+    ],
+    "donts": [
+      "**Don't** add a second hue, and don't brighten the phosphor into saturated matrix-neon green.",
+      "**Don't** set paragraphs in VT323 or shrink reading text into tiny mono.",
+      "**Don't** add box-shadows, rounded corners, noise textures, glitch or chromatic-aberration effects.",
+      "**Don't** use faint phosphor for anything a visitor has to read.",
+      "**Don't** use pictographic icons, emoji or icon fonts; the vocabulary is ASCII prompt characters and block cursors.",
+      "**Don't** add decorative color gradients, icon cards or bento grids; the only gradients are the glass falloff and the tube overlay.",
+      "**Don't** add a second entrance animation; power-on is the one authored motion moment."
+    ]
+  }
+}

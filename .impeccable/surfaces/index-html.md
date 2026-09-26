@@ -19,6 +19,6 @@ STORY: Visitor sees who, since when, what now, and how to write in one screen; s
 
 FIRST VIEWPORT: Top inverse status line (host, uptime, local time, availability, EN/ES). Left-aligned: MAXIM DERKACHEV on one line in VT323 at clamp(2.6rem, 6.4vw, 5.25rem) (user asked for smaller, single line), intro stressing breadth, availability line, two actions [5 Write to me] [6 CV.pdf], blinking block cursor. Main links (github, linkedin, impossible.rocks) in a right column on wide screens, a row below on narrow. Bottom fixed key bar 1–7.
 
-FORM: Amber VT220 terminal, candidate 5 of 7 on the grounded list; user chose it explicitly after a re-roll. Seed key 9e7c8a3e. Code-led (no image generation). Signature interaction: CRT power-on (tube line expands, lines print in sequence) and keyboard navigation via the key bar with the active key lit.
+FORM: Phosphor terminal (built amber, switched to green by the user), candidate 5 of 7 on the grounded list; user chose it explicitly after a re-roll. Seed key 9e7c8a3e. Code-led (no image generation). Signature interaction: CRT power-on (tube line expands, lines print in sequence) and keyboard navigation via the key bar with the active key lit.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
