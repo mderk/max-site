@@ -47,8 +47,8 @@
   <section class="hero" id="top" aria-labelledby="name">
     <h1 class="hero__name line" id="name">Maxim Derkachev</h1>
     <p class="hero__lead line">
-      <span lang="en">Full stack developer and tech lead, building for the web since 1998. The range is wide: an online bookstore, a lot of browser games, some work for medical and oil-industry startups, and these days tools for a game publisher.</span>
-      <span lang="es">Desarrollador full stack y líder técnico; programo para la web desde 1998. El abanico es amplio: una librería online, muchos juegos de navegador, algo de trabajo para startups médicas y del sector petrolero y, ahora mismo, herramientas para una editora de videojuegos.</span>
+      <span lang="en">Full stack developer and tech lead, building for the web since 1998. These days I build with AI agents: I prepare the spec and the tests, the agents write the code, and I review it. The range is wide: an online bookstore, a lot of browser games, some work for medical and oil-industry startups, and these days tools for a game publisher.</span>
+      <span lang="es">Desarrollador full stack y líder técnico; programo para la web desde 1998. Hoy trabajo con agentes de IA: yo preparo la especificación y los tests, los agentes escriben el código y yo lo reviso. El abanico es amplio: una librería online, muchos juegos de navegador, algo de trabajo para startups médicas y del sector petrolero y, ahora mismo, herramientas para una editora de videojuegos.</span>
     </p>
     <p class="hero__avail line">
       <span lang="en">I live in Girona and work remotely. Open to contracts and tech lead roles.</span>
@@ -67,6 +67,48 @@
     </ul>
   </section>
 
+  <section class="block" id="method" aria-labelledby="h-method">
+    <h2 id="h-method"><span class="ps" aria-hidden="true">$</span> cat method</h2>
+    <p class="meta">
+      <span lang="en">How I’ve built software since 2024. Every project, including the ones below.</span>
+      <span lang="es">Cómo hago software desde 2024. En todos los proyectos, también en los de abajo.</span>
+    </p>
+    <ol class="pipe">
+      <li>
+        <h3>spec</h3>
+        <p lang="en">I prepare a spec: what needs to be built and how we’ll know it works.</p>
+        <p lang="es">Preparo la especificación: qué hay que construir y cómo sabremos que funciona.</p>
+      </li>
+      <li>
+        <h3>tests</h3>
+        <p lang="en">I prepare tests from the spec, before any code exists.</p>
+        <p lang="es">Preparo los tests a partir de la especificación, antes de que exista el código.</p>
+      </li>
+      <li>
+        <h3>agents</h3>
+        <p lang="en">Claude Code, Codex or Cursor write the code until the tests pass.</p>
+        <p lang="es">Claude Code, Codex o Cursor escriben el código hasta que pasan los tests.</p>
+      </li>
+      <li>
+        <h3>review</h3>
+        <p lang="en">I read the changes and decide what goes in.</p>
+        <p lang="es">Leo los cambios y decido qué entra.</p>
+      </li>
+    </ol>
+    <div class="prose">
+      <p lang="en">Results so far:</p>
+      <p lang="es">Resultados hasta ahora:</p>
+      <ul class="dash" lang="en">
+        <li>impossible.rocks: one developer, and work I’d have planned in months took weeks;</li>
+        <li>the game publisher: a spend-prediction service, a support pipeline, localization and an ad system, all in a few months.</li>
+      </ul>
+      <ul class="dash" lang="es">
+        <li>impossible.rocks: un solo desarrollador, y lo que habría planificado en meses llevó semanas;</li>
+        <li>la editora de videojuegos: un servicio de predicción de gasto, un sistema de soporte, localización y un sistema de anuncios, todo en pocos meses.</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="block" id="whoami" aria-labelledby="h-whoami">
     <h2 id="h-whoami"><span class="ps" aria-hidden="true">$</span> whoami</h2>
     <div class="whoami">
@@ -74,8 +116,8 @@
         <p lang="en">Most of my work is Python and Django on the back end and React with TypeScript on the front. When a project calls for it I write Go, Java or Next.js too. I’ve led teams of three to eight people and hired and mentored developers, and I’ve also been the only developer on a project.</p>
         <p lang="es">Casi todo mi trabajo es Python y Django en el back end y React con TypeScript en el front. Cuando el proyecto lo pide, también escribo en Go, Java o Next.js. He dirigido equipos de tres a ocho personas y he contratado y formado a desarrolladores, y también he sido el único desarrollador de un proyecto.</p>
 
-        <p lang="en">Since early 2024 I’ve used AI coding tools on every project: Claude Code, Codex, Cursor, Pi and others. It works only with guardrails: I write the spec first, then the tests, and the AI writes code against both.</p>
-        <p lang="es">Desde principios de 2024 uso herramientas de IA para programar en todos mis proyectos: Claude Code, Codex, Cursor, Pi y otras. Solo funciona con controles: primero escribo la especificación, luego los tests, y la IA escribe código que tiene que cumplir ambos.</p>
+        <p lang="en">Since early 2024 I’ve used AI coding tools on every project: Claude Code, Codex, Cursor, Pi and others.</p>
+        <p lang="es">Desde principios de 2024 uso herramientas de IA para programar en todos mis proyectos: Claude Code, Codex, Cursor, Pi y otras.</p>
 
         <p lang="en">I speak Russian and English. My Spanish leaves a lot to be desired, for now.</p>
         <p lang="es">Hablo ruso e inglés. Mi español, de momento, deja mucho que desear.</p>
@@ -203,15 +245,17 @@
   <section class="block" id="projects" aria-labelledby="h-projects">
     <h2 id="h-projects"><span class="ps" aria-hidden="true">$</span> ls ~/projects</h2>
     <p class="meta">
-      <span lang="en">Things I build on my own time and use at work.</span>
-      <span lang="es">Cosas que hago por mi cuenta y uso en el trabajo.</span>
+      <span lang="en">Things I build on my own time.</span>
+      <span lang="es">Cosas que hago por mi cuenta.</span>
     </p>
 
     <article class="proj">
-      <h3><a href="https://github.com/mderk/memento">memento/</a></h3>
-      <p class="proj__tag"><span lang="en">open source · Claude Code plugin</span><span lang="es">open source · plugin para Claude Code</span> · <a href="https://github.com/mderk/memento">github.com/mderk/memento</a></p>
-      <p lang="en">Generates project documentation (a “Memory Bank”) that the AI reads before it touches the code, plus development skills and workflow automation. It has its own workflow engine, an MCP server with checkpoints, resume and parallel steps. I use it on every project I work on.</p>
-      <p lang="es">Genera la documentación del proyecto (un “Memory Bank”) que la IA lee antes de tocar el código, además de skills de desarrollo y automatización de flujos. Tiene su propio motor de flujos, un servidor MCP con checkpoints, reanudación y pasos en paralelo. Lo uso en todos mis proyectos.</p>
+      <h3><a href="https://impossible.rocks">impossible-rocks/</a></h3>
+      <p class="proj__tag"><span lang="en">my own product · since June 2025</span><span lang="es">producto propio · desde junio de 2025</span> · <a href="https://impossible.rocks">impossible.rocks</a></p>
+      <p lang="en">A catalog for mineral collectors. You describe a specimen in a sentence and the AI fills in the mineral, the locality, the quality and the rest. It works offline in the field and syncs later, has a Telegram bot, and its search mixes full-text, fuzzy and vector matching inside PostgreSQL.</p>
+      <p lang="es">Un catálogo para coleccionistas de minerales. Describes un ejemplar en una frase y la IA rellena el mineral, la localidad, la calidad y lo demás. Funciona sin conexión en el campo y sincroniza después, tiene un bot de Telegram, y la búsqueda combina texto completo, coincidencia aproximada y vectores dentro de PostgreSQL.</p>
+      <p lang="en">It started as an experiment with one developer, AI, specs and tests. Work I’d have planned in months took weeks. Now I’m building a white-label mobile app with an in-app store on top of it for a client.</p>
+      <p lang="es">Empezó como un experimento con un solo desarrollador, IA, especificaciones y tests. Resultó que bastaban semanas, no meses. Ahora estoy haciendo encima una app móvil de marca blanca con tienda integrada para un cliente.</p>
     </article>
 
     <article class="proj">
@@ -222,23 +266,21 @@
     </article>
 
     <article class="proj">
-      <h3><a href="https://impossible.rocks">impossible-rocks/</a></h3>
-      <p class="proj__tag"><span lang="en">my own product · since June 2025</span><span lang="es">producto propio · desde junio de 2025</span> · <a href="https://impossible.rocks">impossible.rocks</a></p>
-      <p lang="en">A catalog for mineral collectors. You describe a specimen in a sentence and the AI fills in the mineral, the locality, the quality and the rest. It works offline in the field and syncs later, has a Telegram bot, and its search mixes full-text, fuzzy and vector matching inside PostgreSQL.</p>
-      <p lang="es">Un catálogo para coleccionistas de minerales. Describes un ejemplar en una frase y la IA rellena el mineral, la localidad, la calidad y lo demás. Funciona sin conexión en el campo y sincroniza después, tiene un bot de Telegram, y la búsqueda combina texto completo, coincidencia aproximada y vectores dentro de PostgreSQL.</p>
-      <p lang="en">It started as an experiment with one developer, AI, specs and tests. Work I’d have planned in months took weeks. Now I’m building a white-label mobile app with an in-app store on top of it for a client.</p>
-      <p lang="es">Empezó como un experimento con un solo desarrollador, IA, especificaciones y tests. Resultó que bastaban semanas, no meses. Ahora estoy haciendo encima una app móvil de marca blanca con tienda integrada para un cliente.</p>
+      <h3><a href="https://github.com/mderk/memento">memento/</a></h3>
+      <p class="proj__tag"><span lang="en">open source · Claude Code plugin</span><span lang="es">open source · plugin para Claude Code</span> · <a href="https://github.com/mderk/memento">github.com/mderk/memento</a></p>
+      <p lang="en">Generates project documentation (a “Memory Bank”) that the AI reads before it touches the code, plus development skills and workflow automation. It has its own workflow engine, an MCP server with checkpoints, resume and parallel steps.</p>
+      <p lang="es">Genera la documentación del proyecto (un “Memory Bank”) que la IA lee antes de tocar el código, además de skills de desarrollo y automatización de flujos. Tiene su propio motor de flujos, un servidor MCP con checkpoints, reanudación y pasos en paralelo.</p>
     </article>
   </section>
 
   <section class="block" id="stack" aria-labelledby="h-stack">
     <h2 id="h-stack"><span class="ps" aria-hidden="true">$</span> stack</h2>
     <dl class="stack">
+      <dt>AI</dt><dd>Claude Code, Codex, Cursor, Pi, LLM APIs, RAG, LangChain</dd>
       <dt>Back end</dt><dd>Python, Django, FastAPI, Celery, Go, REST, WebSockets</dd>
       <dt>Front end</dt><dd>React, TypeScript, MobX, Next.js, PIXI.js, Spine</dd>
       <dt><span lang="en">Data</span><span lang="es">Datos</span></dt><dd>PostgreSQL (pgvector, trigram), Redis, MongoDB</dd>
       <dt><span lang="en">Infra</span><span lang="es">Infra</span></dt><dd>Linux, Docker, Kubernetes, GCP</dd>
-      <dt>AI</dt><dd>Claude Code, Codex, Cursor, Pi, LLM APIs, RAG, LangChain</dd>
       <dt><span lang="en">Practice</span><span lang="es">Método</span></dt><dd><span lang="en">spec-driven development, TDD, code review, pytest, vitest</span><span lang="es">desarrollo guiado por especificaciones, TDD, code review, pytest, vitest</span></dd>
       <dt><span lang="en">Studied</span><span lang="es">Estudios</span></dt><dd><span lang="en">Finance and international relations, Saint Petersburg State University of Finance and Economics</span><span lang="es">Finanzas y relaciones internacionales, Universidad Estatal de Finanzas y Economía de San Petersburgo</span></dd>
     </dl>
@@ -265,7 +307,7 @@
 </main>
 
 <nav class="keys" aria-label="Sections">
-  <a href="#whoami" data-key="1"><kbd>1</kbd><span>whoami</span></a>
+  <a href="#method" data-key="1"><kbd>1</kbd><span>method</span></a>
   <a href="#now" data-key="2"><kbd>2</kbd><span>now</span></a>
   <a href="#history" data-key="3"><kbd>3</kbd><span>history</span></a>
   <a href="#projects" data-key="4"><kbd>4</kbd><span>projects</span></a>
