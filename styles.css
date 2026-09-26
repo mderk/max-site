@@ -248,6 +248,9 @@ html[data-lang="es"] .status__lang .on-en { display: inline !important; }
 .pipe h3 { margin: 0 0 0.5rem; font: 400 2.2rem/1 var(--display); color: var(--hot); }
 .pipe h3::before { content: counter(stage) " "; color: var(--faint); }
 .pipe p { margin: 0; color: var(--dim); }
+/* the stages I spend my own time on */
+.pipe .pipe__own { border-top: 3px solid var(--hot); padding-top: calc(0.8rem - 2px); }
+.pipe .pipe__own p { color: var(--phos); }
 
 /* whoami */
 .whoami {
