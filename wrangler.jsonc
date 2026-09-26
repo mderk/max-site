@@ -1,0 +1,11 @@
+{
+  // Static site on Workers Static Assets, served at max.impossible.rocks
+  "name": "max-site",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    { "pattern": "max.impossible.rocks", "custom_domain": true }
+  ]
+}

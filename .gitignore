@@ -1,0 +1,11 @@
+dist/
+.wrangler/
+node_modules/
+.DS_Store
+
+# impeccable: local review captures and machine-local settings
+.impeccable/review/
+.impeccable/live/
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/questions/
